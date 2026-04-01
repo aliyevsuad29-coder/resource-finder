@@ -1,3 +1,17 @@
-body{
-    background: linear-gradient(rgb(39, 0, 60), rgb(68, 0, 178))
+body {
+    background: linear-gradient(to top left, #1a1a2e 0%, #16213e 100%);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+researchTypeDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
