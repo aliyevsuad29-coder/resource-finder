@@ -10,20 +10,26 @@ html, body{
     padding: 0;
 }
 #researchTypeDiv {
-    display: flex;
+    position: relative;
+    display: inline-flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px auto 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .resource-type {
-    background-color: #7c3aed; 
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #9b6aee; 
     color: #ffffff;
     border: none;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 0;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;;
+    transition: background-color 0.2s ease;
 }
 h1 {
     text-align: center;
@@ -61,9 +67,44 @@ h1 {
     background-color: #6d28d9;
 }
 #siteIntroduction {
-    background: linear-gradient(to bottom, rgb(164, 108, 255), #16213e);
+    background: linear-gradient(to bottom, rgb(67, 0, 175), #16213e);
     padding: 20px;
     text-align: center;
     font-size: 40px;
     color:#ff4ede;
+}
+#researchTypeDiv ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #16213e;
+    border: 1px solid #7c3aed;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+    border:none;
+}
+
+#researchTypeDiv:hover ul {
+    display: block;
+}
+#researchTypeDiv #researchTypeButton {
+    background-color: #8649ee; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#researchTypeDiv:hover #researchTypeButton {
+    background-color: #6d28d9;
+}
+#researchTypeDiv .resource-type:hover {
+    background-color: #6d28d9;
 }
